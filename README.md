@@ -17,13 +17,16 @@ You can also use it standalone in your views:
 
 **Important:** It's important you define the `CKEDITOR_BASEPATH` global
 variable before you include the `ckeditor` code. This will make `ckeditor`
-work with theasset pipeline on production, otherwise you'll see a white screen
+work with the asset pipeline on production, otherwise you'll see a white screen
 where **CKEditor** should be shown. More info [here][ckeditor_basepath].
 
     <script type="text/javascript">
         var CKEDITOR_BASEPATH = '/ckeditor/';
     </script>
     <%= javascript_include_tag 'ckeditor/ckeditor' %>
+
+As with this version, ckeditor-rails will try to detect your asset settings and create CKEDITOR_BASEPATH variable accordingly.
+
 
 ### Installation
 
